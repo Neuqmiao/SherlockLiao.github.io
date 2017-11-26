@@ -278,6 +278,131 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://sherlockliao.github.io/2017/08/30/cs20si3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sherlock Liao/廖星宇">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sherlock Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/30/cs20si3/" itemprop="url">cs20si：tensorflow for research 学习笔记3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-30T14:49:08+08:00">
+                2017-08-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="TensorFlow中的Linear-Regression"><a href="#TensorFlow中的Linear-Regression" class="headerlink" title="TensorFlow中的Linear Regression"></a>TensorFlow中的Linear Regression</h2><p>线性回归是机器学习中非常简单的问题，我们用tensorflow实现一个小例子。</p>
+<p>问题: 希望能够找到一个城市中纵火案和盗窃案之间的关系，纵火案的数量是X，盗窃案的数量是Y，我们建设存在如下线性关系，Y = wX + b。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/30/cs20si3/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://sherlockliao.github.io/2017/08/29/Attention Is All You Need 论文阅读笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1387,132 +1512,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sherlockliao.github.io/2017/06/24/vae/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sherlock Liao/廖星宇">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sherlock Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/24/vae/" itemprop="url">花式解释AutoEncoder与VAE</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-24T12:00:00+08:00">
-                2017-06-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="什么是自动编码器"><a href="#什么是自动编码器" class="headerlink" title="什么是自动编码器"></a>什么是自动编码器</h3><p>自动编码器(AutoEncoder)最开始作为一种数据的压缩方法，其特点有:</p>
-<p>1)跟数据相关程度很高，这意味着自动编码器只能压缩与训练数据相似的数据，这个其实比较显然，因为使用神经网络提取的特征一般是高度相关于原始的训练集，使用人脸训练出来的自动编码器在压缩自然界动物的图片是表现就会比较差，因为它只学习到了人脸的特征，而没有能够学习到自然界图片的特征；</p>
-<p>2)压缩后数据是有损的，这是因为在降维的过程中不可避免的要丢失掉信息；<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/24/vae/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1563,7 +1562,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">42</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1585,7 +1584,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">21</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
